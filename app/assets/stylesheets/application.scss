@@ -11,10 +11,10 @@
  * file per style scope.
  *= require carts
  *= require helpers
- * require layout
+ *= require layout
  *= require movies
  *= require transactions
  * require foundation-icons
- * require foundation_and_overrides
+ *= require foundation_and_overrides
 
  */
