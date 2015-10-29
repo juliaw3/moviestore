@@ -8,7 +8,6 @@ gem 'newrelic_rpm'
 
 gem 'rails_12factor', group: :production
 
-
 # Use mysql as the database for Active Record
 gem 'mysql2', '0.3.20'
 gem 'pg'
