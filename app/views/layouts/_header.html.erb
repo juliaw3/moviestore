@@ -1,0 +1,30 @@
+ <nav class="navbar pull-right" role ="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <h1><i class="fi-play-video"></i>MovieStore</h1> 
+             
+             <%if signed_in?%>
+          <ul>
+            <%= link_to cart_path do%>
+              <p align="right"><i class="fi-shopping-cart"></i> My Cart (<span class="cart-count"><%=current_user.cart_count%></span>)</p>
+            <%end%>
+          </ul>
+          <p align="right">Logged in as <%=link_to current_user.email, edit_user_registration_path%></p>
+          <p align="right"><%=link_to "Logout", destroy_user_session_path, method: :delete%></p>
+        <%else%>
+          <p align="right"><%=link_to "Register", new_user_registration_path%></p>
+          <p align="right"><%=link_to "Login", new_user_session_path%></p>
+        <%end%>
+            
+      </a>
+      </div>
+
+    </div>
+</nav>
+
+        
+         
+      </ul>
+      </p>
+ </div>
