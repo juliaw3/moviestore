@@ -1,1 +1,1 @@
-$redis = Redis.new(:driver => :hiredis)
+$redis = Redis.new(driver: :hiredis, url: ENV["REDIS_URL"])
